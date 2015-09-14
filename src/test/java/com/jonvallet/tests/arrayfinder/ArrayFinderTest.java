@@ -17,4 +17,14 @@ public class ArrayFinderTest {
         int actualValue = ArrayFinder.firstPosition(firstArray, secondArray);
         Assert.assertEquals(expectedValue, actualValue);
     }
+
+    @Test
+    public void array2_3_4_5_and_7_8_returns_minus_1() {
+        int firstArray [] = {2,3,4,5};
+        int secondArray [] = {7,8};
+
+        int expectedValue = -1;
+        int actualValue = ArrayFinder.firstPosition(firstArray, secondArray);
+        Assert.assertEquals(expectedValue, actualValue);
+    }
 }
